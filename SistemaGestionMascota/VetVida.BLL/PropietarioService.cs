@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetVida.DAL
+namespace VetVida.BLL
 {
-    class Program
+    class PropietarioService
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
