@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1AFD95B7-D428-4BD4-B4E6-17EE3823D750}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>VetVida.BLL</RootNamespace>
     <AssemblyName>VetVida.BLL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,11 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="ConsultaService.cs" />
+    <Compile Include="EspecieService.cs" />
+    <Compile Include="HistorialMedicoService.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="MascotaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropietarioService.cs" />
+    <Compile Include="RazaService.cs" />
+    <Compile Include="VeterinarioService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VetVida.DAL\VetVida.DAL.csproj">
+      <Project>{b6a252d8-3143-4ce1-a38d-e63e42bdb1d0}</Project>
+      <Name>VetVida.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VetVida.Ents\VetVida.Ents.csproj">
+      <Project>{276a0440-359b-41b9-8d66-62b218064621}</Project>
+      <Name>VetVida.Ents</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

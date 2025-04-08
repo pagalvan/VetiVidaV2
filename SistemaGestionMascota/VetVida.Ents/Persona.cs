@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace VetVida.Ents
 {
-    class Persona
+    public abstract class Persona : BaseEntity
     {
+        public string Cedula { get; set; }
+        public string Nombres { get; set; }
+        public string Apellidos { get; set; }
+        public string Telefono { get; set; }
+
+        public abstract string NombreCompleto();
     }
+
 }

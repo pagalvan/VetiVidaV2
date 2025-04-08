@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace VetVida.Ents
 {
-    class Especie
+    public class Especie : NamedEntity
     {
+        public override string ToString()
+        {
+            return $"{Id};{Nombre}";
+        }
+        public string Serializar()
+        {
+            return $"{Id};{Nombre}";
+        }
     }
+
 }

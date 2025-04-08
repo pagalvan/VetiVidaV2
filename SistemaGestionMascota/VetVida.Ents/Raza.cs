@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace VetVida.Ents
 {
-    class Raza
+    public class Raza : NamedEntity
     {
+        public Especie Especie { get; private set; }
+
+        public void AsignarEspecie(Especie especie)
+        {
+            if (Especie == null)
+            {
+                Especie = especie;
+            }
+        }
+
+        public override string ToString()
+        {
+            return $"{Id};{Nombre};{Especie.Id}";
+        }
     }
+
 }

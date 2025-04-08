@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VetVida.BLL\VetVida.BLL.csproj">
+      <Project>{1afd95b7-d428-4bd4-b4e6-17ee3823d750}</Project>
+      <Name>VetVida.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VetVida.Ents\VetVida.Ents.csproj">
+      <Project>{276a0440-359b-41b9-8d66-62b218064621}</Project>
+      <Name>VetVida.Ents</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

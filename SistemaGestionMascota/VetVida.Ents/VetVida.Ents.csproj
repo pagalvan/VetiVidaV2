@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{276A0440-359B-41B9-8D66-62B218064621}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>VetVida.Ents</RootNamespace>
     <AssemblyName>VetVida.Ents</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,8 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Consulta.cs" />
+    <Compile Include="Especie.cs" />
+    <Compile Include="HistorialMedico.cs" />
+    <Compile Include="Mascota.cs" />
+    <Compile Include="NamedEntity.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Propietario.cs" />
+    <Compile Include="Raza.cs" />
+    <Compile Include="Veterinario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

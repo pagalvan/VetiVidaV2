@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace VetVida.Ents
 {
-    class Propietario
+    public class Propietario : Persona
     {
+        public override string NombreCompleto()
+        {
+            return $"Sr: {Nombres} {Apellidos}";
+        }
+
+        public override string ToString()
+        {
+            return $"{Id};{Cedula};{Nombres};{Apellidos};{Telefono}";
+        }
     }
+
 }

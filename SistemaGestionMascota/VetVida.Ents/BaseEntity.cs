@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace VetVida.Ents
 {
-    class BaseEntity
+    public abstract class BaseEntity
     {
+        public int Id { get; set; }
     }
+
 }
